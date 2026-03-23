@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlackRoad Quantum</title>
+<meta name="description" content="BlackRoad Quantum — QI research and sovereign computing.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:title" content="BlackRoad Quantum"><meta property="og:url" content="https://blackroadquantum.com"><meta property="og:image" content="https://images.blackroad.io/brand/blackroad-og.png">
+<link rel="canonical" href="https://blackroadquantum.com">
+<link rel="icon" type="image/png" href="https://images.blackroad.io/brand/favicon.png">
+<style>*{margin:0;padding:0;box-sizing:border-box}html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth}:root{--g:linear-gradient(90deg,#FF6B2B,#FF2255,#CC00AA,#8844FF,#4488FF,#00D4FF);--g135:linear-gradient(135deg,#FF6B2B,#FF2255,#CC00AA,#8844FF,#4488FF,#00D4FF);--bg:#000;--border:#1a1a1a;--sub:#999;--dim:#333;--sg:'Space Grotesk',sans-serif;--jb:'JetBrains Mono',monospace}body{background:var(--bg);color:#f5f5f5;font-family:var(--sg);overflow-x:hidden;padding-bottom:48px}.grad-bar{height:4px;background:var(--g)}.container{max-width:100%;margin:0 auto;padding:32px 16px 0}.section{margin-bottom:40px}.section-label{font-family:var(--jb);font-size:10px;font-weight:500;color:var(--sub);letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}.title{font-size:24px;font-weight:700;color:#fff;margin-bottom:4px}.subtitle{font-size:13px;color:#aaa;margin-bottom:32px}.mark{width:24px;height:3px;border-radius:2px;background:var(--g);margin-bottom:16px}.card{border:1px solid var(--border);border-radius:10px;padding:16px;background:#0a0a0a;transition:border-color .2s,transform .15s;margin-bottom:10px;cursor:pointer}.card:hover{border-color:var(--dim)}.card:active{transform:scale(.985)}.card.no-click{cursor:default}.card.no-click:active{transform:none}.card-detail{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:#aaa;line-height:1.7}.card.open .card-detail{display:block}.card-arrow{float:right;font-size:14px;color:#555;transition:transform .2s}.card.open .card-arrow{transform:rotate(90deg)}.grid-2,.grid-3{display:grid;gap:10px;margin-bottom:16px}.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.stat-val{font-size:22px;font-weight:700;color:#fff}.stat-label{font-family:var(--jb);font-size:9px;color:#aaa;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}.dot{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:6px}.dot-live{background:var(--g135)}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}.pulse{animation:pulse 2s infinite}.circle-accent{width:8px;height:8px;border-radius:50%;background:var(--g135);display:inline-block}.row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;cursor:pointer;transition:background .15s}.row:last-child{border-bottom:none}.row:active{background:#111}.row-key{color:#aaa}.row-val{color:#ddd;text-align:right}
+.widget-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}.widget{border:1px solid var(--border);border-radius:12px;padding:16px;background:#0a0a0a;cursor:grab;transition:border-color .2s,transform .15s;position:relative;min-height:90px;display:flex;flex-direction:column;user-select:none}.widget:hover{border-color:var(--dim)}.widget:active{cursor:grabbing;transform:scale(.97)}.widget.dragging{opacity:.5}.widget.drag-over{border-color:#888;background:#111}.widget-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:10px;background:#111;border:1px solid var(--border)}.widget-name{font-size:12px;font-weight:600;color:#ddd;margin-bottom:2px}.widget-desc{font-family:var(--jb);font-size:9px;color:#888}.widget-link{position:absolute;inset:0;border-radius:12px;z-index:1}.widget-badge{position:absolute;top:8px;right:8px;font-family:var(--jb);font-size:8px;color:#666;background:#111;border:1px solid var(--border);border-radius:4px;padding:1px 5px}.widget-palette{display:none;border:1px solid var(--border);border-radius:12px;background:#0a0a0a;padding:16px;margin-bottom:16px}.widget-palette.open{display:block}.widget-palette-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}.widget-palette-item{border:1px solid var(--border);border-radius:8px;padding:10px;cursor:pointer;font-size:11px;color:#aaa}.widget-palette-item:hover{border-color:#555;color:#ddd}.widget-edit-mode .widget{animation:wiggle .3s ease-in-out infinite alternate}.widget-edit-mode .widget:nth-child(2n){animation-delay:.15s}@keyframes wiggle{0%{transform:rotate(-.5deg)}100%{transform:rotate(.5deg)}}.widget-remove{display:none;position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;background:#333;border:1px solid #555;color:#aaa;font-size:11px;cursor:pointer;z-index:2;align-items:center;justify-content:center;line-height:1}.widget-edit-mode .widget-remove{display:flex}
+@media(min-width:600px){.container{padding:40px 24px 0;max-width:880px}.grid-3{grid-template-columns:repeat(3,1fr)}.widget-grid{grid-template-columns:repeat(3,1fr)}.widget-palette-grid{grid-template-columns:repeat(3,1fr)}.title{font-size:28px}}
+@media(min-width:900px){.container{padding:48px 24px 0}.grid-2{grid-template-columns:repeat(2,1fr)}.widget-grid{grid-template-columns:repeat(4,1fr)}.widget-palette-grid{grid-template-columns:repeat(4,1fr)}.title{font-size:32px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="grad-bar"></div>
+<div class="container">
+  <div class="section"><div class="mark"></div><div class="title">BlackRoad Quantum</div><div class="subtitle">Quantum-inspired computing  ·  Sovereign research</div></div>
+
+  <div class="section">
+    <div class="section-label">Research</div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:14px;font-weight:600;color:#ddd;margin-bottom:4px"><span class="dot dot-live"></span>Amundson Framework</div><div style="font-family:var(--jb);font-size:10px;color:#888">G(n) = n^(n+1) / (n+1)^n</div><div class="card-detail">The Amundson constant A_G converges to 1/e as n→∞. Computed to 10 million digits. 536/536 identity tests passing. Framework published at BlackRoad-OS-Inc/amundson-constant.<br><br>50+ proven identities connecting A_G to e, pi, gamma, and the prime counting function. LaTeX paper (13pp) + full framework document available.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:14px;font-weight:600;color:#ddd;margin-bottom:4px"><span class="dot dot-live"></span>Ternary Computing</div><div style="font-family:var(--jb);font-size:10px;color:#888">-1, 0, +1 balanced ternary</div><div class="card-detail">BlackBox Protocol uses ternary routing: 1=arrived, 0=waiting, -1=already answered (cancel pending). The 1/(2e) term from the Amundson expansion is the irreducible information gap — the minimum latency floor for any mesh network.</div></div>
+    <div class="card" onclick="toggle(this)"><span class="card-arrow">›</span><div style="font-size:14px;font-weight:600;color:#ddd;margin-bottom:4px"><span class="dot dot-live"></span>BlackBox Protocol</div><div style="font-family:var(--jb);font-size:10px;color:#888">Multi-network mesh: Tor / IPFS / BitTorrent / WebRTC / Bitcoin</div><div class="card-detail">Tested full mesh: 7 nodes, 5 protocols, 2.19s round-trip. Tor hidden services on 3 Pis. n/(1+1/n)^n = n/e + 1/(2e) + O(1/n). Next: IPFS nodes, BitTorrent DHT, mesh.js browser SDK.</div></div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">The Constant</div>
+    <div class="card no-click">
+      <div style="font-family:var(--jb);font-size:11px;color:#ccc;line-height:1.8">
+        A_G = lim(n→∞) G(n) = 1/e<br><br>
+        G(n) = n^(n+1) / (n+1)^n<br><br>
+        Expansion: G(n) = n/e + 1/(2e) + 11/(24en) − 1/(48en²) + ...<br><br>
+        <span style="color:#888">Computed to 10,000,000 digits. Verified. Published.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Quantum Domains</div>
+    <div class="card no-click" id="qdomains"></div>
+  </div>
+
+  <div class="section">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><div class="section-label" style="margin-bottom:0">Apps & Tools</div><button onclick="toggleEditMode()" style="background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-family:var(--jb);font-size:9px;color:#888;cursor:pointer" id="edit-btn">Edit</button></div>
+    <div class="widget-palette" id="widget-palette"><div style="font-size:12px;color:#aaa;margin-bottom:4px">Add a widget</div><div class="widget-palette-grid" id="palette-grid"></div></div>
+    <div class="widget-grid" id="widget-grid"></div>
+  </div>
+  <div class="section" style="text-align:center"><span style="font-size:11px;color:#aaa"><span class="circle-accent pulse"></span>&nbsp; Research since: <span id="uptime">...</span></span></div>
+</div>
+<div class="grad-bar" style="margin-top:24px"></div>
+<script>
+function toggle(el){el.classList.toggle('open');}
+var qd=[{d:'blackroadquantum.com',l:'Primary'},{d:'blackroadquantum.net',l:'.net'},{d:'blackroadquantum.info',l:'.info'},{d:'blackroadquantum.shop',l:'Shop'},{d:'blackroadquantum.store',l:'Store'},{d:'blackroadqi.com',l:'QI'}];
+document.getElementById('qdomains').innerHTML=qd.map(function(x){return '<a href="https://'+x.d+'" style="text-decoration:none;display:block"><div class="row"><span class="row-key"><span class="dot dot-live"></span>'+x.d+'</span><span class="row-val" style="font-family:var(--jb);font-size:10px;color:#666">'+x.l+'</span></div></a>';}).join('');
+var WIDGET_CATALOG=[{id:'chat',name:'Chat',desc:'RoundTrip',icon:'💬',href:'https://chat.blackroad.io',badge:'Live'},{id:'search',name:'Search',desc:'Search all',icon:'🔍',href:'https://search.blackroad.io',badge:'Live'},{id:'ai',name:'AI',desc:'Playground',icon:'🧠',href:'https://blackroadai.com'},{id:'network',name:'Network',desc:'Mesh',icon:'🌐',href:'https://blackroad.network'},{id:'systems',name:'Systems',desc:'Fleet',icon:'🖥',href:'https://blackroad.systems'},{id:'company',name:'Company',desc:'Corporate',icon:'🏛',href:'https://blackroad.company'},{id:'quantum',name:'Quantum',desc:'QI',icon:'⚛',href:'https://blackroadquantum.com'},{id:'lucidia',name:'Lucidia',desc:'Companion',icon:'✧',href:'https://lucidia.earth'},{id:'math',name:'Math',desc:'Amundson',icon:'∑',href:'https://github.com/BlackRoad-OS-Inc/amundson-constant'},{id:'github',name:'GitHub',desc:'Source',icon:'⚡',href:'https://github.com/BlackRoad-OS-Inc'},{id:'status',name:'Status',desc:'Fleet',icon:'📡',href:'https://status.blackroad.io'},{id:'identity',name:'Identity',desc:'Profile',icon:'👤',href:'https://blackroad.me'}];
+var STORAGE_KEY='br-widgets-quantum';var DEFAULT_WIDGETS=['quantum','math','ai','chat','search','github','network','company'];
+function getActiveWidgets(){try{var s=localStorage.getItem(STORAGE_KEY);if(s)return JSON.parse(s);}catch(e){}return DEFAULT_WIDGETS.slice();}
+function saveActiveWidgets(ids){localStorage.setItem(STORAGE_KEY,JSON.stringify(ids));}
+var editMode=false;
+function toggleEditMode(){editMode=!editMode;document.getElementById('edit-btn').textContent=editMode?'Done':'Edit';document.getElementById('widget-palette').classList.toggle('open',editMode);document.getElementById('widget-grid').classList.toggle('widget-edit-mode',editMode);renderWidgets();renderPalette();}
+function renderWidgets(){var ids=getActiveWidgets();document.getElementById('widget-grid').innerHTML=ids.map(function(id,i){var w=WIDGET_CATALOG.find(function(x){return x.id===id});if(!w)return '';return '<div class="widget" draggable="true" data-id="'+w.id+'" data-index="'+i+'" ondragstart="wDragStart(event)" ondragover="wDragOver(event)" ondrop="wDrop(event)" ondragend="wDragEnd(event)">'+(editMode?'<div class="widget-remove" onclick="removeWidget(\''+w.id+'\')">×</div>':'')+'<div class="widget-icon">'+w.icon+'</div><div class="widget-name">'+w.name+'</div><div class="widget-desc">'+w.desc+'</div>'+(w.badge?'<div class="widget-badge">'+w.badge+'</div>':'')+(!editMode?'<a href="'+w.href+'" target="_blank" class="widget-link"></a>':'')+'</div>';}).join('');}
+function renderPalette(){var ids=getActiveWidgets();var avail=WIDGET_CATALOG.filter(function(w){return ids.indexOf(w.id)===-1});var pg=document.getElementById('palette-grid');if(!avail.length){pg.innerHTML='<div style="font-size:11px;color:#555;padding:8px">All added</div>';return;}pg.innerHTML=avail.map(function(w){return '<div class="widget-palette-item" onclick="addWidget(\''+w.id+'\')">'+w.icon+' '+w.name+'</div>';}).join('');}
+function addWidget(id){var ids=getActiveWidgets();if(ids.indexOf(id)===-1){ids.push(id);saveActiveWidgets(ids);}renderWidgets();renderPalette();}
+function removeWidget(id){var ids=getActiveWidgets().filter(function(x){return x!==id});saveActiveWidgets(ids);renderWidgets();renderPalette();}
+var dragIdx=null;function wDragStart(e){dragIdx=+e.target.closest('.widget').dataset.index;e.target.closest('.widget').classList.add('dragging');}function wDragOver(e){e.preventDefault();e.target.closest('.widget')?.classList.add('drag-over');}function wDrop(e){e.preventDefault();document.querySelectorAll('.widget').forEach(function(x){x.classList.remove('drag-over')});var t=e.target.closest('.widget');if(!t)return;var ti=+t.dataset.index;if(dragIdx===null||dragIdx===ti)return;var ids=getActiveWidgets();var m=ids.splice(dragIdx,1)[0];ids.splice(ti,0,m);saveActiveWidgets(ids);renderWidgets();}function wDragEnd(e){dragIdx=null;document.querySelectorAll('.widget').forEach(function(x){x.classList.remove('dragging','drag-over')});}
+renderWidgets();
+var founded=new Date('2025-11-17T00:00:00Z');function uptime(){var diff=Date.now()-founded;var d=Math.floor(diff/86400000);var h=Math.floor((diff%86400000)/3600000);var m=Math.floor((diff%3600000)/60000);document.getElementById('uptime').textContent=d+'d '+h+'h '+m+'m';}uptime();setInterval(uptime,60000);
+</script>
+</body>
+</html>
